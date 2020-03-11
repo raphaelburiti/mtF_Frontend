@@ -1,0 +1,83 @@
+/* 
+    Calendário
+**/
+.react-calendar {
+    border: 1px solid var(--gray);
+    margin: auto;
+    border-radius: 4px;
+    width: 100%;
+    height: 290px;
+    max-width: 310px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+abbr[title] {
+    text-decoration: none;
+}
+.react-calendar__navigation {
+    margin-bottom: 1px;
+}
+.react-calendar__month-view__weekdays {
+    font-size: 0.55em;
+}
+button.react-calendar__navigation__label {
+    color: #333;
+    font-weight: bold;
+    font-size: 14px;
+    text-transform: lowercase;
+}
+
+/*  
+    Section left
+**/
+.section-calendar {
+    margin: 10px;
+}
+.section-calendar-int {
+    height: 100%;
+    width: 100%;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.report-area {
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+.send-report {
+    padding: 20px;
+    border-radius: 5px;
+    width: 100%;
+    /* background-color:#155fa1; */
+    background-color:#5789f5;
+    color: #fff;
+}
+
+.btn-send-report {
+    border-radius: 5px;
+    margin-top: 20px;
+    height: 35px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #fff;
+    line-height: 35px;
+}
+
+.report-form__select {
+    width: 60px;
+    padding: 4px;
+    border: 1px solid var(--gray);
+    border-radius: 4px;
+}
+.report-form__button {
+    margin-left: 15px;
+}
+

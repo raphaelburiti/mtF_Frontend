@@ -1,0 +1,132 @@
+header#main-header {
+    /* background: #00a1d7; */
+    background: #3c97f1;
+    height: 90px;
+    width: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+header#main-header .header-content {
+    width: 90%;
+    height: 90px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo h2 {
+    font-family: 'Viga', sans-serif;
+    color: rgba(255, 255, 255, 0.9);
+    border: 0;
+    margin: 0 0 0 15px;
+}
+.logo {
+    margin-left: 20px;
+
+    display: flex;
+    align-items: center;
+}
+.user-content {
+    margin-right: 20px;
+
+    display: flex;
+    align-items: center;
+}
+.user-name {
+    color: #fff;
+    margin-right: 15px;
+    cursor: pointer;
+}
+.user-avatar {
+    cursor: pointer;
+    width: 50px;
+    height: 50px;
+    border-radius: 30px;
+    overflow: hidden;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.user-avatar-img {
+    width: 100%;
+    height: 100%;
+}
+.menu {
+    opacity: 100%;
+    height: 250px;
+    border-radius: 5px;
+    background-color: #fff;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    color: #333;
+    position: relative;
+    top: 145px; 
+    left: 60px;
+    padding: 30px 30px 10px 30px;   
+
+    animation: openMenu 0.3s;
+    display: none;
+}
+
+.menu-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    opacity: 0%;
+
+    animation: fadeIn 1.2s;
+}  
+
+@keyframes openMenu {
+    0% {
+        opacity: 0%;
+        height: 0px;
+        top: 0px;
+    }
+    100% {
+        opacity: 100%;
+        top: 145px;
+        height: 250px;
+    }
+}
+@keyframes fadeIn {
+    0% {
+        opacity: 0%;
+    }
+    100% {
+        opacity: 100%;
+    }
+}
+.info-user {
+    display: flex;
+    flex-direction: column;
+}
+.info-name {
+    font-weight: bold;
+    font-size: 15px;
+}
+.links-menu {
+    cursor: pointer;
+    height: 90px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.item-menu {
+    color: #333;
+    transition: all .2s ease-in-out;
+}
+.item-menu:hover {
+    color: #5789f5;
+}
+.icon-arrow_up {
+    padding: 10px;
+    cursor: pointer;
+    align-self: center;
+}
+.icon-arrow_up:hover {
+    color: #5789f5;
+}

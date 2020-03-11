@@ -1,0 +1,146 @@
+.container-edit {
+  height: calc(100vh - 90px);
+  display: grid;
+  grid-template-columns: 25% 75%;
+}
+.thumb-section {
+  min-width: 240px;
+  height: 280px;
+  border-radius: 5px;
+  margin: 20px 20px 20px 20px;
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0px 0px 5px #ddd;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+} 
+.thumb-box {
+  width: 200px;
+  height: 200px;  
+  border-radius: 100px;
+  overflow: hidden;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.input-thumbnail {
+  display: none;
+}
+.thumb-img {
+  height: 100%;
+  cursor: pointer;
+}
+.label-area {
+  margin-top: 15px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.thumb-label {
+  cursor: pointer;
+}
+.delete-icon {
+  cursor: pointer;
+  color: #bbb;
+  margin-left: 10px;
+  transition: all 0.3s;
+}
+.delete-icon:hover{
+  color: #e93434ee;
+}
+.info-section {
+  box-shadow: 0px 0px 5px #ddd;
+  border-radius: 5px;
+  margin: 20px 20px 20px 0;
+  padding: 20px;
+  background-color: #fff;
+
+  display: flex;
+  justify-content: space-around;
+}
+h2 {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+}
+.info-perfil {
+  width: 45%;
+  display: grid;
+  grid-template-rows: repeat(6, 1fr);
+}
+.info-pcs2 {
+  width: 45%;
+  display: grid;
+  grid-template-rows: repeat(6, 1fr);
+}
+.btn-submit {
+  grid-area: 6;
+  height: 60px;
+  color: #fff;
+  border-radius: 3px;
+  background-color: #5789f5;
+  margin-top: 5px;
+  transition: all 0.3s;
+}
+.btn-submit:hover {
+  background-color: #1b56d6;
+}
+.edit-field {
+  width: 100%;
+  height: 60px;
+  padding: 7px 15px 5px 15px;
+  margin-top: 5px;
+  border: 1px solid #ddd;
+  border-radius: 3px;
+  cursor: text;
+  transition: all 0.5s;
+  
+  display:flex;
+  flex-direction: column; 
+}
+.edit-field:hover{
+  border: 1px solid #3f73e4;
+}
+
+.edit-label {
+	flex:1;
+	color:#aaa;
+	font-size:14px;
+	cursor: text;
+  transition: all 0.5s;
+  
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.edit-input {
+  height:0;
+	display:block;
+	font-size:14px;
+	outline:0;
+	border:0;
+	cursor: text;
+	width:100%;
+	transition: all 0.5s;
+}
+
+.edit-label-on {
+  height: 50px;
+  font-size:11px;
+  color:#888;
+  
+  display:flex;
+  flex-direction: column;
+}
+
+.edit-input-on {
+  height: 40px;
+  color:#3a3a3a;
+  font-size:14px;
+}
